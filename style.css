@@ -1,0 +1,25 @@
+#board {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.snakeHead {
+  background-image: url("./SnakeGame/img/snake-face.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.snakeBody {
+  background: linear-gradient(rgb(20, 110, 20), rgb(8, 134, 83));
+  border-radius: 13px;
+  size: 2px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.snakeFood {
+  background-size: cover;
+  background-image: url("./SnakeGame/img/mouse.png");
+  background-repeat: no-repeat;
+}

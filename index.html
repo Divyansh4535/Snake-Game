@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="w-full h-screen bg-green-200 flex items-center justify-center flex-col">
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    style="
+      background-image: url(SnakeGame/img/bg.jpg);
+      background-size: 100vw 100vh;
+      background-repeat: no-repeat;
+    "
+    class="h-[100vh] w-[100vw] flex flex-col items-center justify-center"
+  >
+    <div class="flex items-center justify-between w-full px-10">
+      <div class="score text-3xl font-bold">Score :</div>
+      <div class="highScore text-3xl font-bold pr-5">High Score :</div>
     </div>
-
-</body>
-<script src="script.js"></script>
+    <div
+      id="board"
+      class="w-[45%] h-[90%] bg-gradient-to-t from-green-300 via-teal-300 to-yellow-300 border border-black"
+    ></div>
+  </body>
+  <script src="script.js"></script>
 </html>
